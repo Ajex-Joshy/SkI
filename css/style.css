@@ -605,7 +605,12 @@ button {
     height: 10vh; /* Adjust as necessary */
     width: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+    .about_img {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {  
     .about_img {
         max-width: 100%;
         max-height: 100%;
@@ -656,6 +661,7 @@ button {
     width: 180px;
     float: left;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .read_bt_1 a {
@@ -1429,4 +1435,72 @@ textarea#comment.massage-bt::placeholder {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+
+
+/*-------------------
+   Gallery Page
+ -------------------*/
+
+.gallery__page {
+	padding: 80px 15px 65px;
+}
+
+@media (max-width: 576px) {
+	.gallery__page {
+		padding: 30px 15px 65px;
+	}
+}
+
+.gallery__warp {
+	max-width: 1570px;
+	margin: 0 auto;
+}
+
+.gallery__item {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.gallery__item img {
+	min-width: 100%;
+}
+
+.fr-position-outside {
+	left: 0;
+	top: 0;
+	right: auto;
+	bottom: auto;
+}
+
+.fr-position-text {
+	color: #fff;
+}
+
+.fr-window-skin-fresco.fr-window-ui-outside .fr-close-background,
+.fr-window-skin-fresco.fr-window-ui-outside .fr-close:hover .fr-close-background {
+	background-color: transparent;
+}
+
+.fr-thumbnail-active {
+	border: 2px solid #8DB952;
+}
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+    .about_taital-2 {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+    }
+}
+.about_taital-2 {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #3b3a3a;
+    font-weight: bold;
+    padding-top: 40px;  
 }
